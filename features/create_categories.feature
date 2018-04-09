@@ -35,3 +35,6 @@ Feature: Create and Edit Categories
         And I press "Save"
         Then I should see "general,ideas"
         Then I should see "test1"
+    Scenario: Blank/duplicate should not be allowed
+        When I follow "Save"
+        Then I should see "Category is invalid (blank/duplicate etc.)"

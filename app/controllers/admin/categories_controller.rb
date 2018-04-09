@@ -53,7 +53,7 @@ class Admin::CategoriesController < Admin::BaseController
         flash[:error] = _('Category could not be saved.')
       end
     else
-      flash[:notice] = _('Category is invalid (blank/deplicate etc.)')
+      flash[:notice] = _('Category is invalid (blank/duplicate etc.)')
     end
     redirect_to :action => 'new'
   end
