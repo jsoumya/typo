@@ -1,26 +1,3 @@
-# Feature: Create Categories
-#   As a blog admin
-#   In order to share my thoughts with the world
-#   I want to be able to add articles to my blog
-
-#   Background:
-#     Given the blog is set up
-#     And I am logged into the admin panel
-    
-#   Scenario: Successfully create categories
-#     Given I am on the new categories page
-#     When I fill in "category_name" with "Foo"
-#     And I fill in "category_keyword" with "Bar"
-#     And I fill in "category_permalink" with "Chick"
-#     And I fill in "category_description" with "Egg"
-#     And I press "Save"
-#     Then I should be on the admin content page
-#     Then I should see "Foo"
-#     Then I should see "Bar"
-#     Then I should see "Chick"
-#     Then I should see "Egg"
-
-
 Feature: Create and Edit Categories
     As a blog administrator
     In order to organize blog articles
