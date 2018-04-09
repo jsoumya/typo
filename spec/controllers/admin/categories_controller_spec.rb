@@ -41,6 +41,10 @@ describe Admin::CategoriesController do
       expect(flash[:notice]).to eq("Category was successfully saved.")
       expect(assigns(:category)).not_to be_nil
     end
+    it "can't add blank category" do
+      post :edit
+      expect(flash[:notice]).to eq("Category is invalid (blank/duplicate etc.)")
+    end
     # end
     
   end
